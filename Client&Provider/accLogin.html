@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Account Login</title>
+    <link rel="stylesheet" href="../style/MovieTeathre.css">
+</head>
+<body>
+    <header>
+        <img src="../Images/logo.png" alt="" class="logo">
+        <h1>Login To Your Account</h1>
+    </header>
+    <nav>
+        <a href="../index.html">Home Page</a>
+    </nav>
+    <article id="article">
+        <section>
+            <p>Please fill out the credentials below to login to your account!</p>
+        </section>
+        <section id="form">
+            <form id="loginForm" action="http://localhost:3000/processLoginForm" method="post">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" required><br>
+
+                <input type="submit" id="submit" Value="Login">
+                <input type="reset" id="reset" value="Clear Form">
+            </form>
+        </section>
+    </article>
+    <footer>
+        <p>
+            Concordia University
+            SOEN 287-Q Project 2: December 3, 2023 
+        </p>
+    </footer>
+    
+    <script src="../script/formHandlerBrowser.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Account Registration</title>
+    <link rel="stylesheet" href="../style/MovieTeathre.css">
+</head>
+<body>
+    <header>
+        <img src="../Images/logo.png" alt="" class="logo">
+        <h1>Create An Account</h1>
+    </header>
+    <nav>
+        <a href="../index.html">Home Page</a>
+    </nav>
+    <article id="article">
+        <section>
+            <p>Please fill out the form below to create your account!</p>
+        </section>
+        <section id="form">
+            <form id="createAccountForm" action="http://localhost:3000/processCreateAccountForm" method="post">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" required><br>
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" required><br>
+                <label for="userType">User Type:</label>
+                <select name="userType" id="userType" required>
+                    <option value="client">Client</option>
+                    <option value="admin">Admin</option>
+                </select><br>
+
+                <input type="submit" id="submit" Value="Create Account">
+                <input type="reset" id="reset" value="Clear Form">
+            </form>
+        </section>
+    </article>
+    <footer>
+        <p>
+            Concordia University
+            SOEN 287-Q Project 2: December 3, 2023 
+        </p>
+    </footer>
+    
+    <script src="../script/formHandlerBrowser.js" defer></script>
+</body>
+</html>

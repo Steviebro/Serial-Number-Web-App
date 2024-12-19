@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css"href="../style/MovieTeathre.css">
+<title>Client Home</title>
+
+</head>
+<body>
+    <header>
+        <img src="../Images/logo.png" alt="" class="logo">
+        <h1>Welcome</h1>
+    </header>
+
+    <nav>
+        <a href="Userhome.html">Home</a>
+        <a href="../Client&Provider/accMgmtPassword.html">Profile Management</a>
+        <a href="cAssociateLicense.html">Associate a License</a>
+        <a href="cAcquireNewLicense.html">Acquire New License</a>
+        <a href="cRenewLicense.html">Renew/Cancel a License</a>
+        <a href="../index.html">Sign Out</a>
+    </nav>
+
+    
+    <article id="article">
+        
+        <section id="form">
+            <form id="listClientSerialNumbersForm" action="http://localhost:3000/processListClientSerialNumbers" method="get">
+                <label>Your Email: </label><br>
+                <input type="email" id="email" name="email" required><br>
+
+                <input type="submit" id="submit" Value="Submit">
+                <input type="reset" id="reset" value="Clear Form">
+            </form>
+        </section>
+    </article>
+        
+    <footer>
+        <p>
+            Concordia University
+            SOEN 287-Q Project 2: December 3, 2023 
+        </p>
+    </footer>
+
+    <script src="../script/formHandlerBrowser.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!-- Author: Steven Gingras (40098045) -->
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>License Association</title>
+    <link rel="stylesheet" type="text/css"href="../style/MovieTeathre.css">
+</head>
+
+<body>
+    <header>
+        <img src="../Images/logo.png" alt="" class="logo">
+        <h1>Associate a license with your account</h1>
+    </header>
+    <nav>
+        <a href="Userhome.html">Home</a>
+        <a href="../Client&Provider/accMgmtPassword.html">Profile Management</a>
+        <a href="cAssociateLicense.html">Associate a License</a>
+        <a href="cAcquireNewLicense.html">Acquire New License</a>
+        <a href="cRenewLicense.html">Renew/Cancel a License</a>
+        <a href="../index.html">Sign Out</a>
+    </nav>
+    <article id="article">
+        <section>
+            <p>If you have purchased a license from a third party, please fill out the below form to associate it to
+                your account!</p>
+        </section>
+        <section id="form">
+            <form id="thirdPartyLicense" action="http://localhost:3000/processThirdPartyLicenseForm" method="post">
+                <label>Your Email: </label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label>Serial Number: </label><br>
+                <input type="text" id="serialNumber" name="serialNumber" required><br>
+                <label>Expiry Date: </label><br>
+                <input type="date" id="expiryDate" name="expiryDate" required><br>
+
+                <input type="submit" id="submit" Value="Associate License">
+                <input type="reset" id="reset" value="Clear Form">
+
+            </form>
+        </section>
+    </article>
+    <footer>
+        <p>
+            Concordia University
+            SOEN 287-Q Project 2: December 3, 2023 
+        </p>
+    </footer>
+    <script src="../script/formHandlerBrowser.js" defer></script>
+</body>
+
+</html>

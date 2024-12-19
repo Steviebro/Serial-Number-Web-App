@@ -1,0 +1,53 @@
+<!-- Author: Steven Gingras (40098045) -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Manage Clients</title>
+    <link rel="stylesheet" type="text/css"href="../style/MovieTeathre.css">
+</head>
+
+<body>
+    <header>
+        <img src="../Images/logo.png" alt="" class="logo">
+        <h1>Manage Clients</h1>
+    </header>
+    <nav>
+        <a href="Adminhome.html">Home</a>
+        <a href="../Client&Provider/accMgmtPassword.html">Profile Management</a>
+        <a href="sManageClients.html">Manage Clients</a>
+        <a href="sGenerateNewSerialNumber.html">Generate Serial Numbers</a>
+        <a href="sAssociateLicense.html">Associate Serial Numbers</a>
+        <a href="sEnableDisableLicense.html">Enable/Disable Serial Numbers</a>
+        <a href="../index.html">Sign Out</a>
+    </nav>
+    <article id="article">
+        <section>
+            <p>To manage your clients, select your product.</p>
+        </section>
+
+        <section id="form">
+            <form id="manageClientsForm" action="http://localhost:3000/processManageClientsForm" method="post">
+                <select name="product" id="product">
+                    <option value="Phrase">EditHub Phrase</option>
+                    <option value="Grid">EditHub Grid</option>
+                    <option value="PDF">EditHub PDF</option>
+                    <option value="Slide">EditHub Slide</option>
+                    <option value="VidMeet">EditHub VidMeet</option>
+                </select><br>
+
+                <input type="reset" id="reset" value="Reset Form">
+                <input type="submit" id="submit" value="View clients with this product">
+            </form>
+        </section>
+    </article>
+    <footer>
+        <p>
+            Concordia University
+            SOEN 287-Q Project 2: December 3, 2023 
+        </p>
+    </footer>
+    <script src="../script/formHandlerBrowser.js" defer></script>
+</body>
+
+</html>

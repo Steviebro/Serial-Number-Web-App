@@ -1,0 +1,57 @@
+<!-- Author: Steven Gingras (40098045) -->
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Serial Number Enable/Disable</title>
+    <link rel="stylesheet" type="text/css"href="../style/MovieTeathre.css">
+</head>
+
+<body>
+    <header>
+        <img src="../Images/logo.png" alt="" class="logo">
+        <h1>Enable or Disable a Serial Number</h1>
+    </header>
+    <nav>
+        <a href="Adminhome.html">Home</a>
+        <a href="../Client&Provider/accMgmtPassword.html">Profile Management</a>
+        <a href="sManageClients.html">Manage Clients</a>
+        <a href="sGenerateNewSerialNumber.html">Generate Serial Numbers</a>
+        <a href="sAssociateLicense.html">Associate Serial Numbers</a>
+        <a href="sEnableDisableLicense.html">Enable/Disable Serial Numbers</a>
+        <a href="../index.html">Sign Out</a>
+    </nav>
+    <article id="article">
+        <section id="intro">
+            <p>To enable or disable a serial number, please fill out the form below.</p>
+        </section>
+
+        <section id="form">
+            <form id="enableOrDisableLicenseForm" action="http://localhost:3000/processEnableOrDisableLicenseForm" method="post">
+                <label>Client Email: </label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label>Action required: </label>
+                <select name="actionType" id="actionType">
+                    <option value="enable">Enable</option>
+                    <option value="disable">Disable</option>
+                </select><br>
+                <label>Serial Number: </label><br>
+                <input type="text" id="serialNumber" name="serialNumber" required><br>
+
+                <input type="reset" id="reset" value="Clear Form">
+                <input type="submit" id="submit" value="Perform Required Action">
+            </form>
+        </section>
+
+    </article>
+    <footer>
+        <p>
+            Concordia University
+            SOEN 287-Q Project 2: December 3, 2023 
+        </p>
+    </footer>
+    <script src="../script/formHandlerBrowser.js" defer></script>
+</body>
+
+</html>

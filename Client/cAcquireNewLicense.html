@@ -1,0 +1,60 @@
+<!-- Author: Steven Gingras (40098045) -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Acquire New License</title>
+    <link rel="stylesheet" type="text/css"href="../style/MovieTeathre.css">
+</head>
+
+<body>
+    <header>
+        <img src="../Images/logo.png" alt="" class="logo">
+        <h1>Acquire New License</h1>
+    </header>
+    <nav>
+        <a href="Userhome.html">Home</a>
+        <a href="../Client&Provider/accMgmtPassword.html">Profile Management</a>
+        <a href="cAssociateLicense.html">Associate a License</a>
+        <a href="cAcquireNewLicense.html">Acquire New License</a>
+        <a href="cRenewLicense.html">Renew/Cancel a License</a>
+        <a href="../index.html">Sign Out</a>
+    </nav>
+    <article id="article">
+        <section>
+            <p>To acquire a new license, enter the relevant information below.</p>
+        </section>
+
+        <section id="form">
+            <form id="newLicenseForm" action="http://localhost:3000/processUniqueSerialNumber" method="post">
+                <label>Your Email: </label><br>
+                <input type="email" id="email" name="email" required><br>
+                <select name="product" id="product">
+                    <option value="Phrase">EditHub Phrase</option>
+                    <option value="Grid">EditHub Grid</option>
+                    <option value="PDF">EditHub PDF</option>
+                    <option value="Slide">EditHub Slide</option>
+                    <option value="VidMeet">EditHub VidMeet</option>
+                </select><br>
+                <label>Years: </label>
+                <select name="years" id="years">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select><br>
+
+                <input type="reset" id="reset" value="Reset Form">
+                <input type="submit" id="submit" value="Confirm Product Acquisition">
+            </form>
+        </section>
+    </article>
+    <footer>
+        <p>
+            Concordia University
+            SOEN 287-Q Project 2: December 3, 2023 
+        </p>
+    </footer>
+    <script src="../script/formHandlerBrowser.js" defer></script>
+</body>
+
+</html>

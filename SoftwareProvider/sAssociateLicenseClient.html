@@ -1,0 +1,52 @@
+<!-- Author: Steven Gingras (40098045) -->
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Client License Association</title>
+    <link rel="stylesheet" type="text/css"href="../style/MovieTeathre.css">
+</head>
+
+<body>
+    <header>
+        <img src="../Images/logo.png" alt="" class="logo">
+        <h1>Associate Serial Numbers With a Client</h1>
+    </header>
+    <nav>
+        <a href="Adminhome.html">Home</a>
+        <a href="../Client&Provider/accMgmtPassword.html">Profile Management</a>
+        <a href="sManageClients.html">Manage Clients</a>
+        <a href="sGenerateNewSerialNumber.html">Generate Serial Numbers</a>
+        <a href="sAssociateLicense.html">Associate Serial Numbers</a>
+        <a href="sEnableDisableLicense.html">Enable/Disable Serial Numbers</a>
+        <a href="../index.html">Sign Out</a>
+    </nav>
+    <article id="article">
+        <section id="intro">
+            <p>Please fill the form below to associate a serial number with a client.</p>
+        </section>
+        <section id="form">
+            <form id="clientAssociationForm" action="http://localhost:3000/processClientAssociationForm" method="post">
+
+                <label>Client e-mail: </label><br>
+                <input type="email" id="clientEmail" name="clientEmail" required><br>
+
+                <label>Serial Number: </label><br>
+                <input type="text" id="serialNumber" name="serialNumber" required><br>
+
+                <input type="submit" id="submit" value="Associate License">
+                <input type="reset" id="reset" value="Clear Form">
+            </form>
+        </section>
+    </article>
+    <footer>
+        <p>
+            Concordia University
+            SOEN 287-Q Project 2: December 3, 2023 
+        </p>
+    </footer>
+    <script src="../script/formHandlerBrowser.js" defer></script>
+</body>
+
+</html>

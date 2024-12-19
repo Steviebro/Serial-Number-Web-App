@@ -1,0 +1,94 @@
+
+
+body {
+     /* Image source: https://abstract.desktopnexus.com/wallpaper/201800/*/
+    background-image: url(../Images/blackbars.jpg);
+}
+
+header{
+    text-align: center;
+    font-weight: bolder;
+    color: black;
+
+    font-size: large;
+    
+
+    width: 100%;
+    padding: 5px;
+    margin: 0px 0px 10px 0px;
+
+    /* Image source: https://stock.adobe.com/ca/search?k=gray+technology+background&asset_id=305112572*/
+    background-image: url(../Images/white.jpg);
+
+}
+
+
+/* Code for creating the logo */
+span.logo {
+    padding: 20px 5px 0px 5px;
+    color: black;
+    background-color: #8c2101;
+
+    font-weight: bolder;
+
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+}
+
+/* Logo is an image here but it is created by css from the home page*/
+header img.logo {
+    height: 50px;
+    margin: 0px 100% 0px 0px;
+}
+
+span.green {
+    color: rgb(14, 206, 14);
+    font-style: italic;
+}
+
+.prompt {
+    color: red;
+    font-weight: bolder;
+}
+
+nav{
+    /* Image source: https://www.wallpaperflare.com/line-vertical-white-stripes-red-performance-curtain-backgrounds-wallpaper-cttae*/
+    background-image: url(../Images/redbars.jpg);
+    color: aliceblue;
+}
+nav a {
+    color: aliceblue;
+    margin: 50px;
+}
+
+
+article {
+    margin: 10px 15% 5% 15%;
+    padding: 10px;
+    background-color: #751532
+}
+
+section{
+    background-color: pink;
+    color:black;
+}
+
+
+footer{
+    background-color: #751532;
+    text-align: center;
+    font-weight: bolder;
+
+
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    
+    margin-top: 20px;
+
+}
+
+div#ahome{
+    size:20%; border-color: #0ac8c8;  display:inline-block; border: 10px;
+}

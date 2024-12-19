@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Account Deletion</title>
+    <link rel="stylesheet" href="../style/MovieTeathre.css">
+</head>
+<body>
+    <header>
+        <img src="../Images/logo.png" alt="" class="logo">
+        <h1>Delete Your Account</h1>
+    </header>
+    <nav>
+        <a href="../index.html">Home Page</a>
+    </nav>
+    <article id="article">
+        <section>
+            <p>Please fill out the form below to delete your account!</p>
+        </section>
+        <section id="form">
+            <form id="deleteAccountForm" action="http://localhost:3000/processDeleteAccountForm" method="post">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" required><br>
+
+                <input type="radio" id="validateDeletion" name="validateDeletion" required>
+                <label class="prompt">I understand that I am deleting my account and that I will no longer have access to my products.</label><br>
+
+                <input type="submit" id="submit" Value="Delete Account">
+                <input type="reset" id="reset" value="Clear Form">
+            </form>
+        </section>
+    </article>
+    <footer>
+        <p>
+            Concordia University
+            SOEN 287-Q Project 2: December 3, 2023 
+        </p>
+    </footer>
+    
+    <script src="../script/formHandlerBrowser.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!-- Author: Steven Gingras (40098045) -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>License Termination</title>
+    <link rel="stylesheet" type="text/css"href="../style/MovieTeathre.css">
+</head>
+
+<body>
+    <header>
+        <img src="../Images/logo.png" alt="" class="logo">
+        <h1>Terminate a License</h1>
+    </header>
+    <nav>
+        <a href="Userhome.html">Home</a>
+        <a href="../Client&Provider/accMgmtPassword.html">Profile Management</a>
+        <a href="cAssociateLicense.html">Associate a License</a>
+        <a href="cAcquireNewLicense.html">Acquire New License</a>
+        <a href="cRenewLicense.html">Renew/Cancel a License</a>
+        <a href="../index.html">Sign Out</a>
+    </nav>
+    <article id="article">
+        <section id="intro">
+            <p>If you would like to terminate a product License, please fill out the form below.</p>
+        </section>
+
+        <section id="form">
+            <form id="terminateLicenseForm" action="http://localhost:3000/processTerminateLicenseForm" method="post">
+                <label>Your Email: </label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label>Product to terminate: </label>
+                <select name="product" id="product">
+                    <option value="Phrase">EditHub Phrase</option>
+                    <option value="Grid">EditHub Grid</option>
+                    <option value="PDF">EditHub PDF</option>
+                    <option value="Slide">EditHub Slide</option>
+                    <option value="VidMeet">EditHub VidMeet</option>
+                </select><br>
+                <input type="radio" id="validateTermination" name="validateTermination" required>
+                <label class="prompt">I understand that I am terminating my subscription, that I will no longer have access to this service.</label><br>
+                <input type="submit" id="submit" value="Terminate Subscription Now">
+            </form>
+        </section>
+    </article>
+    <footer>
+        <p>
+            Concordia University
+            SOEN 287-Q Project 2: December 3, 2023 
+        </p>
+    </footer>
+    <script src="../script/formHandlerBrowser.js" defer></script>
+</body>
+
+</html>
